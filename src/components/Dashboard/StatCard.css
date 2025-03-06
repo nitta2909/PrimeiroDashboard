@@ -1,0 +1,51 @@
+.stat-card {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(12, 255, 12, 0.3);
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(12, 255, 12, 0.2);
+}
+
+.stat-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+  color: #0cff0c;
+  background-color: rgba(12, 255, 12, 0.05);
+  border: 1px solid rgba(12, 255, 12, 0.3);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(12, 255, 12, 0.2);
+  text-shadow: 0 0 5px rgba(12, 255, 12, 0.5);
+}
+
+.stat-content h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #e0e0e0;
+  font-weight: 500;
+  opacity: 0.8;
+  letter-spacing: 1px;
+}
+
+.stat-content p {
+  margin: 5px 0 0 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0cff0c;
+  text-shadow: 0 0 5px rgba(12, 255, 12, 0.3);
+  font-family: "Rajdhani", sans-serif;
+}
