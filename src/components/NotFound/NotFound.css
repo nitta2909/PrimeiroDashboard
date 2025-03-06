@@ -1,0 +1,63 @@
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  font-family: "Rajdhani", "Orbitron", sans-serif;
+  color: #e0e0e0;
+}
+
+.not-found-content {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(12, 255, 12, 0.3);
+  border-radius: 5px;
+  padding: 40px;
+  max-width: 500px;
+  box-shadow: 0 0 30px rgba(12, 255, 12, 0.1);
+}
+
+.error-code {
+  font-family: "Orbitron", sans-serif;
+  font-size: 8rem;
+  font-weight: bold;
+  color: #0cff0c;
+  text-shadow: 0 0 20px rgba(12, 255, 12, 0.5);
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.not-found-content h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.8rem;
+  margin: 0 0 20px 0;
+  color: #e0e0e0;
+  letter-spacing: 2px;
+}
+
+.not-found-content p {
+  margin: 0 0 30px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.return-btn {
+  display: inline-block;
+  background-color: rgba(12, 255, 12, 0.1);
+  color: #0cff0c;
+  border: 1px solid #0cff0c;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.return-btn:hover {
+  background-color: rgba(12, 255, 12, 0.2);
+  box-shadow: 0 0 15px rgba(12, 255, 12, 0.3);
+  transform: translateY(-2px);
+}

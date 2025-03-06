@@ -4,7 +4,15 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Dashboard from "./components/Dashboard/Dashboard";
+import Sistemas from "./components/Sistemas/Sistemas";
+import Processos from "./components/Processos/Processos";
+import Modulos from "./components/Modulos/Modulos";
+import Alertas from "./components/Alertas/Alertas";
+import Energia from "./components/Energia/Energia";
+import Dados from "./components/Dados/Dados";
+import Comando from "./components/Comando/Comando";
 import Loading from "./components/Loading/Loading";
+import NotFound from "./components/NotFound/NotFound";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -32,62 +40,14 @@ function App() {
           <main className="main-content">
             <Routes>
               <Route path="/" element={<Dashboard />} />
-              <Route
-                path="/sistemas"
-                element={
-                  <div className="page-container">
-                    <h2 className="page-title">SISTEMAS</h2>
-                  </div>
-                }
-              />
-              <Route
-                path="/processos"
-                element={
-                  <div className="page-container">
-                    <h2 className="page-title">PROCESSOS</h2>
-                  </div>
-                }
-              />
-              <Route
-                path="/modulos"
-                element={
-                  <div className="page-container">
-                    <h2 className="page-title">MÓDULOS</h2>
-                  </div>
-                }
-              />
-              <Route
-                path="/alertas"
-                element={
-                  <div className="page-container">
-                    <h2 className="page-title">ALERTAS</h2>
-                  </div>
-                }
-              />
-              <Route
-                path="/energia"
-                element={
-                  <div className="page-container">
-                    <h2 className="page-title">ENERGIA</h2>
-                  </div>
-                }
-              />
-              <Route
-                path="/dados"
-                element={
-                  <div className="page-container">
-                    <h2 className="page-title">DADOS</h2>
-                  </div>
-                }
-              />
-              <Route
-                path="/comando"
-                element={
-                  <div className="page-container">
-                    <h2 className="page-title">COMANDO</h2>
-                  </div>
-                }
-              />
+              <Route path="/sistemas" element={<Sistemas />} />
+              <Route path="/processos" element={<Processos />} />
+              <Route path="/modulos" element={<Modulos />} />
+              <Route path="/alertas" element={<Alertas />} />
+              <Route path="/energia" element={<Energia />} />
+              <Route path="/dados" element={<Dados />} />
+              <Route path="/comando" element={<Comando />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
         </div>
