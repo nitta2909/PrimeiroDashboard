@@ -45,5 +45,22 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      (function () {
+        const redirect = sessionStorage.getItem("redirect");
+        if (redirect) {
+          sessionStorage.removeItem("redirect");
+          if (
+            redirect.startsWith("/PrimeiroDashboard/") &&
+            redirect !== "/PrimeiroDashboard/"
+          ) {
+            const path = redirect.replace("/PrimeiroDashboard/", "");
+            window.location.replace(
+              window.location.origin + "/PrimeiroDashboard/#/" + path
+            );
+          }
+        }
+      })();
+    </script>
   </body>
 </html>
